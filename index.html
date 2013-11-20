@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Forms</title>
+<link href="css/general.css" rel="stylesheet">
+</head>
+
+<body>
+
+<form>
+
+	<div>
+		<label for="name">Name</label>
+		<input type="text" id="name" class="input-text" required>
+	</div>
+
+	<!--Error messege-->
+	<div>
+		<label for="name">
+		Name
+		<strong class="error">Please fill in your name</strong>
+		</label>
+		<input type="text" id="name" class="input-text input-error" required>
+	</div>
+
+
+	<div>
+		<label for="email">E-mail address</label>
+		<input type="email" id="email" class="input-text" required>
+	</div>
+	
+	<div>
+		<label for="phone">Phone number</label>
+		<input type="tel" id="phone" class="input-text" maxlength="20" minlength="10">
+	</div>
+	
+	<div>
+		<label for="website">Website</label>
+		<input type="url" id="website" class="input-text" placeholder="http://example.com">
+	</div>
+	
+	
+	<div>
+		<label for="favcolour">Favorite Colour</label>
+		<input type="color" id="favcolour">
+	</div>
+	
+	<div>
+		<label for="age">Age</label>
+		<input type="number" id="age" pattern="[0-9]*" min="1" max="130">
+	</div>
+	
+	<div>
+		<label for="brightness">Brightness</label>
+		<input type="range" id="brightness" min="5" max="25" step="5">
+	</div>
+	
+	<div>
+		<input type="checkbox" id="code" checked>
+		<label for="code"> I Love Code!</label>
+	</div>
+	
+	<!--	Related items that we want to group to each other-->
+	<fieldset>
+			<!--Label for the whole droup-->
+			<legend>How satisfied are you?</legend>
+			
+			<input type="radio" id="extreme-poor" name="satisfaction">
+			<label for="extreme-poor">Extremely Dissatisfied</label>
+			
+			<input type="radio" id="dissatisfied" name="satisfaction">
+			<label for="dissatisfied">Dissatisfied</label>
+			
+			<input type="radio" id="neutural" name="satisfaction">
+			<label for="neutural">Neutural</label>
+			
+			<input type="radio" id="satisfied" name="satisfaction">
+			<label for="satisfied">Satisfied</label>
+			
+			<input type="radio" id="extreme-good" name="satisfaction">
+			<label for="extreme-good">Extremely sattisfied</label>
+			
+	</fieldset>
+			
+			<div>
+			<label for="dino">Favorite dinosaur</label>
+			<select id="dino">
+				<option></option>
+				<option selected>Pteranodor</option>
+				<option>T-Rex</option>
+				<option>Stegasaurs</option>
+				<option>Triceratops</option>
+			</select>
+			</div>
+			
+			
+
+		<div>
+		<label for="why">Why is that your favorite dinosaurs?</label>
+		<textarea for="why" class="input-text"></textarea>
+		</div>
+	
+		<button type="submit">Send!</button>
+		
+</form>
+
+</body>
+</html>
