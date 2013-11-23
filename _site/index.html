@@ -2,9 +2,112 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+ 	<meta name="generator" content=
+  	"HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org">
+	<meta charset="UTF-8">
+	<meta name="handheldfriendly" content="true">
+ 	<meta name="mobileoptimized" content="240">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Anna Odeh">
+	<title>Ottawa Book Club; Ottawa, Canada</title>
+	<link href="css/general.css" rel="stylesheet">
 </head>
 
 <body>
+
+	<div class="top">
+	<img src="image/topimage.png" alt="" class="bar">
+	</div>
+
+<div class="layout">
+<form>
+
+	<div>
+		<label for="name">Name</label>
+		<input type="text" id="name" class="input-text" required>
+	</div>
+
+
+	<div>
+		<label for="email">E-mail address</label>
+		<input type="email" id="email" class="input-text" required maxlength="256">
+	</div>
+	
+	<div>
+		<label for="phone">Phone number</label>
+		<input type="tel" id="phone" class="input-text" maxlength="20">
+	</div>
+	
+	<div>
+		<label for="address">Address</label>
+		<input type="text" id="address" class="input-text" required>
+	</div>
+	
+	
+	<div>
+		<label for="city">City</label>
+		<input type="text" id="city" class="input-text" required>
+	</div>
+	
+	
+			<div>
+			<label for="province">Province</label>
+			<select id="province"  required>
+				<option value="">&nbsp;</option>
+				<option>QC</option>
+				<option>ON</option>
+				<option>NS</option>
+				<option>NB</option>
+				<option>MB</option>
+				<option>BC</option>
+				<option>PE</option>
+				<option>SK</option>
+				<option>AB</option>
+				<option>NL</option>
+			</select>
+			</div>
+			
+		<div>
+		<label for="postal">Postal Code</label>
+		<input type="text" id="postal"  maxlength="7" required>
+		</div>	
+
+		<div>
+		<label for="time">What time of day would be best to meet?</label>
+		<input type="time" id="time" class="input-text" required>
+		</div>
+		
+		<div>
+		<label for="amount">How many books have you read this year?</label>
+		<input type="number" id="amount" class="input-text">
+		</div>
+	
+	
+		<div>
+		<label for="description">Describe your favourite book & author</label>
+		<textarea id="description" class="input-text"></textarea>
+		</div>
+		
+			<fieldset class="ask">
+			<!--Label for the whole droup-->
+			<legend>How much do you love this genre?</legend>
+			
+			<input type="radio" id="dontlike" name="satisfaction">
+			<label for="dontlike">Don't like</label>
+			
+			<input type="radio" id="neutural" name="satisfaction">
+			<label for="neutural">Neutural</label>
+			
+			<input type="radio" id="likeit" name="satisfaction">
+			<label for="likeit">like it</label>
+			
+	</fieldset>
+	
+		<button type="submit">Send!</button>
+		
+</form>
+</div>
+
 </body>
 </html>
